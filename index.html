@@ -31,7 +31,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ── HERO ── */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -169,7 +168,6 @@
     font-weight: 500;
   }
 
-  /* ── SECTION ── */
   .section {
     padding: 72px 48px;
     border-bottom: 1px solid var(--border);
@@ -184,7 +182,6 @@
     margin-bottom: 40px;
   }
 
-  /* ── STAT GRID ── */
   .stat-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -234,7 +231,6 @@
   .accent-off  { color: var(--off); }
   .accent-gold { color: #F0B429; }
 
-  /* ── FUNNEL ── */
   .funnel-wrap {
     display: flex;
     flex-direction: column;
@@ -286,7 +282,6 @@
     font-style: italic;
   }
 
-  /* ── TIME IN STAGE ── */
   .stage-grid {
     display: flex;
     flex-direction: column;
@@ -327,7 +322,6 @@
     text-align: right;
   }
 
-  /* ── OUTREACH ── */
   .outreach-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -365,7 +359,6 @@
     line-height: 1.4;
   }
 
-  /* ── FOOTER ── */
   .footer {
     padding: 40px 48px;
     display: flex;
@@ -387,7 +380,6 @@
     font-family: 'DM Mono', monospace;
   }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 640px) {
     .hero, .section { padding: 56px 24px; }
     .hero-centerpiece { flex-direction: column; align-items: flex-start; gap: 28px; }
@@ -404,7 +396,6 @@
 </head>
 <body>
 
-<!-- HERO -->
 <section class="hero">
   <p class="hero-eyebrow">Recruiter Performance · All Time · Source: Gem ATS</p>
   <h1 class="hero-name">Samantha Rodriguez</h1>
@@ -441,7 +432,6 @@
   </div>
 </section>
 
-<!-- KEY METRICS -->
 <section class="section">
   <p class="section-label">Key metrics</p>
   <div class="stat-grid">
@@ -478,199 +468,6 @@
   </div>
 </section>
 
-
-<!-- PIPELINE FUNNEL -->
-<section class="section">
-  <p class="section-label">Pipeline passthrough by stage</p>
-  <div class="funnel-wrap" id="funnel">
-    <div class="funnel-row">
-      <span class="funnel-label">Application review</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="11"></div></div>
-      <span class="funnel-pct">11%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Parking bucket</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="63"></div></div>
-      <span class="funnel-pct">63%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Recruiter interview</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="45"></div></div>
-      <span class="funnel-pct">45%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Hiring manager interview</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="56"></div></div>
-      <span class="funnel-pct">56%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Team interviews</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="57"></div></div>
-      <span class="funnel-pct">57%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Executive interview</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="85"></div></div>
-      <span class="funnel-pct">85%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Recap</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="82"></div></div>
-      <span class="funnel-pct">82%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Pre-employment</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="96"></div></div>
-      <span class="funnel-pct">96%</span>
-    </div>
-    <div class="funnel-row">
-      <span class="funnel-label">Offer</span>
-      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="84"></div></div>
-      <span class="funnel-pct">84%</span>
-    </div>
-  </div>
-  <p class="funnel-note">Passthrough = % advancing from that stage to the next.</p>
-</section>
-
-<!-- TIME IN STAGE -->
-<section class="section">
-  <p class="section-label">Time in stage (days)</p>
-  <div class="stage-grid">
-    <div class="stage-row">
-      <span class="stage-label">Application created</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:43.75%"></div></div>
-      <span class="stage-days">7d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Post review parking</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:6.25%"></div></div>
-      <span class="stage-days">1d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Recruiter interview</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:25%"></div></div>
-      <span class="stage-days">4d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Hiring manager interview</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:37.5%"></div></div>
-      <span class="stage-days">6d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Team interviews</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:18.75%"></div></div>
-      <span class="stage-days">3d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Executive interview</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:6.25%"></div></div>
-      <span class="stage-days">1d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Recap</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:0%"></div></div>
-      <span class="stage-days">0d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Pre-employment</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:6.25%"></div></div>
-      <span class="stage-days">1d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Offer</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:50%"></div></div>
-      <span class="stage-days">8d</span>
-    </div>
-    <div class="stage-row">
-      <span class="stage-label">Hired</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:100%"></div></div>
-      <span class="stage-days">16d</span>
-    </div>
-  </div>
-  <p class="funnel-note" style="margin-top:20px">Median days spent in each stage across all closed requisitions.</p>
-</section>
-
-<!-- HIRES BY PERIOD -->
-<section class="section">
-  <p class="section-label">Hires by period</p>
-  <p style="font-size:13px; color:var(--muted); margin-bottom:32px; max-width:600px;">Hiring volume over time — including the H1 and H2 2022 GTM ramp where 60 Sales and Customer Success hires were delivered across two quarters.</p>
-  <div style="display:flex; flex-direction:column; gap:3px; max-width:640px">
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H2 2019</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:0%"></div></div>
-      <span class="stage-days">0</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H2 2020</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:0%"></div></div>
-      <span class="stage-days">0</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H2 2021</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:2.6%"></div></div>
-      <span class="stage-days">1</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label" style="color:var(--teal); font-weight:600">H1 2022</span>
-      <div class="stage-bar-wrap" style="position:relative">
-        <div class="stage-bar" style="width:46.2%; background:linear-gradient(90deg,var(--teal2),var(--teal))"></div>
-        <span style="position:absolute; left:8px; top:50%; transform:translateY(-50%); font-size:10px; color:var(--navy); font-family:'DM Mono',monospace; font-weight:600; white-space:nowrap">GTM ramp</span>
-      </div>
-      <span class="stage-days" style="color:var(--teal)">18</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label" style="color:var(--teal); font-weight:600">H2 2022</span>
-      <div class="stage-bar-wrap" style="position:relative">
-        <div class="stage-bar" style="width:100%; background:linear-gradient(90deg,var(--teal2),var(--teal))"></div>
-        <span style="position:absolute; left:8px; top:50%; transform:translateY(-50%); font-size:10px; color:var(--navy); font-family:'DM Mono',monospace; font-weight:600; white-space:nowrap">GTM ramp</span>
-      </div>
-      <span class="stage-days" style="color:var(--teal)">39</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H1 2023</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:59%"></div></div>
-      <span class="stage-days">23</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H2 2023</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:23.1%"></div></div>
-      <span class="stage-days">9</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H1 2024</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:25.6%"></div></div>
-      <span class="stage-days">10</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H2 2024</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:28.2%"></div></div>
-      <span class="stage-days">11</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H1 2025</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:28.2%"></div></div>
-      <span class="stage-days">11</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H2 2025</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:35.9%"></div></div>
-      <span class="stage-days">14</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H1 2026</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:79.5%"></div></div>
-      <span class="stage-days">31</span>
-    </div>
-    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
-      <span class="stage-label">H2 2026</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:2.6%"></div></div>
-      <span class="stage-days">1</span>
-    </div>
-  </div>
-  <p class="funnel-note" style="margin-top:20px">Exact hire counts from Gem "Candidates by fiscal half" report. H1/H2 2022 highlighted to reflect the GTM ramp referenced in resume. Total: 168 hired per Gem (167 per hires dashboard — minor variance by report type).</p>
-</section>
-
-<!-- INTERVIEW TIME BY DEPARTMENT -->
 <section class="section">
   <p class="section-label">Interview hours by department</p>
   <p style="font-size:13px; color:var(--muted); margin-bottom:32px; max-width:560px;">Total interviewer hours coordinated across all hiring processes — reflects breadth of functions recruited and depth of process management.</p>
@@ -805,16 +602,198 @@
       <div class="stage-bar-wrap"><div class="stage-bar" style="width:0.9%"></div></div>
       <span class="stage-days">30h</span>
     </div>
-    <div class="stage-row" style="grid-template-columns: 260px 1fr 72px">
-      <span class="stage-label">Templates</span>
-      <div class="stage-bar-wrap"><div class="stage-bar" style="width:0.3%"></div></div>
-      <span class="stage-days">10h</span>
-    </div>
   </div>
-  <p class="funnel-note" style="margin-top:20px">27 departments recruited across · Source: Gem ATS</p>
+  <p class="funnel-note" style="margin-top:20px">26 departments recruited across · Source: Gem ATS</p>
 </section>
 
-<!-- OUTREACH ACTIVITY -->
+<section class="section">
+  <p class="section-label">Pipeline passthrough by stage</p>
+  <div class="funnel-wrap" id="funnel">
+    <div class="funnel-row">
+      <span class="funnel-label">Application review</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="11"></div></div>
+      <span class="funnel-pct">11%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Parking bucket</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="63"></div></div>
+      <span class="funnel-pct">63%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Recruiter interview</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="45"></div></div>
+      <span class="funnel-pct">45%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Hiring manager interview</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="56"></div></div>
+      <span class="funnel-pct">56%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Team interviews</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="57"></div></div>
+      <span class="funnel-pct">57%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Executive interview</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="85"></div></div>
+      <span class="funnel-pct">85%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Recap</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="82"></div></div>
+      <span class="funnel-pct">82%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Pre-employment</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="96"></div></div>
+      <span class="funnel-pct">96%</span>
+    </div>
+    <div class="funnel-row">
+      <span class="funnel-label">Offer</span>
+      <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:0%; background:linear-gradient(90deg,#1a7a6e,var(--teal))" data-pct="84"></div></div>
+      <span class="funnel-pct">84%</span>
+    </div>
+  </div>
+  <p class="funnel-note">Passthrough = % advancing from that stage to the next.</p>
+</section>
+
+<section class="section">
+  <p class="section-label">Time in stage (days)</p>
+  <div class="stage-grid">
+    <div class="stage-row">
+      <span class="stage-label">Application created</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:43.75%"></div></div>
+      <span class="stage-days">7d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Post review parking</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:6.25%"></div></div>
+      <span class="stage-days">1d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Recruiter interview</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:25%"></div></div>
+      <span class="stage-days">4d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Hiring manager interview</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:37.5%"></div></div>
+      <span class="stage-days">6d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Team interviews</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:18.75%"></div></div>
+      <span class="stage-days">3d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Executive interview</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:6.25%"></div></div>
+      <span class="stage-days">1d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Recap</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:0%"></div></div>
+      <span class="stage-days">0d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Pre-employment</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:6.25%"></div></div>
+      <span class="stage-days">1d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Offer</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:50%"></div></div>
+      <span class="stage-days">8d</span>
+    </div>
+    <div class="stage-row">
+      <span class="stage-label">Hired</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:100%"></div></div>
+      <span class="stage-days">16d</span>
+    </div>
+  </div>
+  <p class="funnel-note" style="margin-top:20px">Median days spent in each stage across all closed requisitions.</p>
+</section>
+
+<section class="section">
+  <p class="section-label">Hires by period</p>
+  <p style="font-size:13px; color:var(--muted); margin-bottom:32px; max-width:600px;">Hiring volume over time — including the H1 and H2 2022 GTM ramp where 60 Sales and Customer Success hires were delivered across two quarters.</p>
+  <div style="display:flex; flex-direction:column; gap:3px; max-width:640px">
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H2 2019</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:0%"></div></div>
+      <span class="stage-days">0</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H2 2020</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:0%"></div></div>
+      <span class="stage-days">0</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H2 2021</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:2.6%"></div></div>
+      <span class="stage-days">1</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label" style="color:var(--teal); font-weight:600">H1 2022</span>
+      <div class="stage-bar-wrap" style="position:relative">
+        <div class="stage-bar" style="width:46.2%; background:linear-gradient(90deg,var(--teal2),var(--teal))"></div>
+        <span style="position:absolute; left:8px; top:50%; transform:translateY(-50%); font-size:10px; color:var(--navy); font-family:'DM Mono',monospace; font-weight:600; white-space:nowrap">GTM ramp</span>
+      </div>
+      <span class="stage-days" style="color:var(--teal)">18</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label" style="color:var(--teal); font-weight:600">H2 2022</span>
+      <div class="stage-bar-wrap" style="position:relative">
+        <div class="stage-bar" style="width:100%; background:linear-gradient(90deg,var(--teal2),var(--teal))"></div>
+        <span style="position:absolute; left:8px; top:50%; transform:translateY(-50%); font-size:10px; color:var(--navy); font-family:'DM Mono',monospace; font-weight:600; white-space:nowrap">GTM ramp</span>
+      </div>
+      <span class="stage-days" style="color:var(--teal)">39</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H1 2023</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:59%"></div></div>
+      <span class="stage-days">23</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H2 2023</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:23.1%"></div></div>
+      <span class="stage-days">9</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H1 2024</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:25.6%"></div></div>
+      <span class="stage-days">10</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H2 2024</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:28.2%"></div></div>
+      <span class="stage-days">11</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H1 2025</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:28.2%"></div></div>
+      <span class="stage-days">11</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H2 2025</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:35.9%"></div></div>
+      <span class="stage-days">14</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H1 2026</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:79.5%"></div></div>
+      <span class="stage-days">31</span>
+    </div>
+    <div class="stage-row" style="grid-template-columns: 120px 1fr 48px">
+      <span class="stage-label">H2 2026</span>
+      <div class="stage-bar-wrap"><div class="stage-bar" style="width:2.6%"></div></div>
+      <span class="stage-days">1</span>
+    </div>
+  </div>
+  <p class="funnel-note" style="margin-top:20px">Exact hire counts from Gem "Candidates by fiscal half" report. H1/H2 2022 highlighted to reflect the GTM ramp referenced in resume. Total: 168 hired per Gem (167 per hires dashboard — minor variance by report type).</p>
+</section>
+
 <section class="section">
   <p class="section-label">Outreach activity</p>
   <div class="outreach-grid">
@@ -854,7 +833,6 @@
   <p class="funnel-note" style="margin-top:20px">All outreach attributed to Samantha Rodriguez · Source: Gem</p>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <span class="footer-name">Samantha Rodriguez, GPHR · samrdzr@gmail.com</span>
   <span class="footer-source">Data source: Gem ATS · Exported July 2026</span>
